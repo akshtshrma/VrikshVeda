@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="What is the capital of France?"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Answer Options -->
+    <LinearLayout
+        android:id="@+id/answerOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnOption1"
+            style="@style/OptionButtonStyle"
+            android:text="Paris" />
+
+        <Button
+            android:id="@+id/btnOption2"
+            style="@style/OptionButtonStyle"
+            android:text="Berlin" />
+
+        <Button
+            android:id="@+id/btnOption3"
+            style="@style/OptionButtonStyle"
+            android:text="Madrid" />
+
+        <Button
+            android:id="@+id/btnOption4"
+            style="@style/OptionButtonStyle"
+            android:text="Rome" />
+    </LinearLayout>
+</RelativeLayout>
